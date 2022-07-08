@@ -20,11 +20,13 @@
   </head>
 
   <body class="bgIbiza">
-    <section class="container mt-5" id="addressForm">
+    <section class="container mt-5">
       <h1 class="mb-3 text-start fw-bold text-uppercase text-white">
         Address Book
       </h1>
-      <div class="border border-1 border-info shadow-lg bg-light p-4 rounded">
+      <div
+        class="border border-1 border-secondary shadow-lg bg-light p-4 roundedCorners" id="addressForm""
+      >
         <div class="row">
           <div class="col-12 col-md-5">
             <img
@@ -123,7 +125,7 @@
                   />
                 </div>
                 <!-- State -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4">
                   <label for="state" class="form-label">State</label>
                   <select name="state" class="form-select" aria-label="State">
                     <option selected>Select State</option>
@@ -180,6 +182,19 @@
                     <option value="WY">Wyoming</option>
                   </select>
                 </div>
+                <!-- Zip -->
+                <div class="col-12 col-md-2">
+                  <label for="zip" class="form-label">Zip</label>
+                  <input
+                    type="text"
+                    name="zip"
+                    class="form-control"
+                    placeholder="12345"
+                    aria-label="zip"
+                    required
+                  />
+                </div>
+
                 <!-- Family Checkbox -->
                 <div class="form-check">
                   <input
@@ -195,9 +210,7 @@
 
                 <!-- Buttons MUST exist within the form tags -->
                 <div class="col-12 text-end">
-                  <button type="submit" class="btn btn-primary mt-3">
-                    Save
-                  </button>
+                  <button type="submit" class="btn btn-primary">Save</button>
                 </div>
               </div>
             </form>
