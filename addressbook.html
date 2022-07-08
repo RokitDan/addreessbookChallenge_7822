@@ -20,208 +20,275 @@
   </head>
 
   <body class="bgIbiza">
-    <section class="container mt-5">
-      <h1 class="mb-3 text-start display-3 text-center text-white border-bottom border-top">
-        Address Book
-      </h1>
-      <div
-        class="border border-4 border-warning shadow-lg bg-light p-5 roundedCorners mb-5" id="addressForm"
-      >
-        <div class="row">
-          <div class="col-12 col-md-5 mb-5">
-            <!-- Image -->
-            <div class="square-img-container">
-                <img
-                src="/img/ProfilePicPt.png"
-                class="square-img rounded-circle shadow"
-                alt="Photo of Human"
-            />
-            </div>
-          </div>
-          <div class="col-12 col-md-7">
-            <form>
-              <div class="row g-4">
-                <!-- First Name -->
-                <div class="col-12 col-md-6" id="firstName">
-                  <label for="firstName" class="form-label">First Name</label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    class="form-control"
-                    placeholder="First Name"
-                    aria-label="First Name"
-                    required
-                  />
-                </div>
-                <!-- Last Name -->
-                <div class="col-12 col-md-6" id="lastName">
-                  <label for="lastName" class="form-label">Last Name</label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    class="form-control"
-                    placeholder="Last Name"
-                    aria-label="Last Name"
-                    required
-                  />
-                </div>
-                <!-- Email -->
-                <div class="col-12 col-md-6" id="email">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Email"
-                    aria-label="Email"
-                    required
-                  />
-                </div>
-                <!-- Phone -->
-                <div class="col-12 col-md-6" id="phone">
-                  <label for="phoneNumber" class="form-label"
-                    >Phone Number (Optional)</label
-                  >
-                  <input
-                    type="text"
-                    name="phoneNumber"
-                    class="form-control"
-                    placeholder="Phone Number"
-                    aria-label="Phone Number"
-                  />
-                </div>
-                <!-- Address1 -->
-                <div class="col-12" id="address1">
-                  <label for="address1" class="form-label">Address</label>
-                  <input
-                    type="text"
-                    name="address1"
-                    class="form-control"
-                    placeholder="1234 Main Street"
-                    aria-label="Address 1"
-                    required
-                  />
-                </div>
-                <!-- Address2 -->
-                <div class="col-12" id="address2">
-                  <label for="address2" class="form-label"
-                    >Address 2 (optional)</label
-                  >
-                  <input
-                    type="text"
-                    name="address2"
-                    class="form-control"
-                    placeholder="Apartment #, Suite #"
-                    aria-label="Address 2"
-                  />
-                </div>
-                <!-- City -->
-                <div class="col-12 col-md-6" id="city">
-                  <label for="city" class="form-label">City</label>
-                  <input
-                    type="text"
-                    name="city"
-                    class="form-control"
-                    placeholder="City"
-                    aria-label="City"
-                    required
-                  />
-                </div>
-                <!-- State -->
-                <div class="col-12 col-md-4" id="State">
-                  <label for="state" class="form-label">State</label>
-                  <!-- State Options -->
-                  <select name="state" class="form-select" aria-label="State">
-                    <option selected>Select State</option>
-                    <option value="AL">Alabama</option>
-                    <option value="AK">Alaska</option>
-                    <option value="AZ">Arizona</option>
-                    <option value="AR">Arkansas</option>
-                    <option value="CA">California</option>
-                    <option value="CO">Colorado</option>
-                    <option value="CT">Connecticut</option>
-                    <option value="DE">Delaware</option>
-                    <option value="DC">District Of Columbia</option>
-                    <option value="FL">Florida</option>
-                    <option value="GA">Georgia</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="ID">Idaho</option>
-                    <option value="IL">Illinois</option>
-                    <option value="IN">Indiana</option>
-                    <option value="IA">Iowa</option>
-                    <option value="KS">Kansas</option>
-                    <option value="KY">Kentucky</option>
-                    <option value="LA">Louisiana</option>
-                    <option value="ME">Maine</option>
-                    <option value="MD">Maryland</option>
-                    <option value="MA">Massachusetts</option>
-                    <option value="MI">Michigan</option>
-                    <option value="MN">Minnesota</option>
-                    <option value="MS">Mississippi</option>
-                    <option value="MO">Missouri</option>
-                    <option value="MT">Montana</option>
-                    <option value="NE">Nebraska</option>
-                    <option value="NV">Nevada</option>
-                    <option value="NH">New Hampshire</option>
-                    <option value="NJ">New Jersey</option>
-                    <option value="NM">New Mexico</option>
-                    <option value="NY">New York</option>
-                    <option value="NC">North Carolina</option>
-                    <option value="ND">North Dakota</option>
-                    <option value="OH">Ohio</option>
-                    <option value="OK">Oklahoma</option>
-                    <option value="OR">Oregon</option>
-                    <option value="PA">Pennsylvania</option>
-                    <option value="RI">Rhode Island</option>
-                    <option value="SC">South Carolina</option>
-                    <option value="SD">South Dakota</option>
-                    <option value="TN">Tennessee</option>
-                    <option value="TX">Texas</option>
-                    <option value="UT">Utah</option>
-                    <option value="VT">Vermont</option>
-                    <option value="VA">Virginia</option>
-                    <option value="WA">Washington</option>
-                    <option value="WV">West Virginia</option>
-                    <option value="WI">Wisconsin</option>
-                    <option value="WY">Wyoming</option>
-                  </select>
-                </div>
-                <!-- Zip -->
-                <div class="col-12 col-md-2" id="zip">
-                  <label for="zip" class="form-label">Zip</label>
-                  <input
-                    type="text"
-                    name="zip"
-                    class="form-control"
-                    placeholder="12345"
-                    aria-label="zip"
-                    required
-                  />
-                </div>
-
-                <!-- Family Checkbox -->
-                <div class="form-check" id="familyCheckBox">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  <label class="form-check-label" for="flexCheckDefault">
-                    Family
-                  </label>
-                </div>
-
-                <!-- Buttons MUST exist within the form tags -->
-                <div class="col-12 text-end" id="saveButton">
-                  <button type="submit" class="btn btn-danger">Save</button>
-                </div>
-              </div>
-            </form>
-          </div>
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Forms Examples</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="addressbook.html"
+                >Address book</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="invoice.html">Invoice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Form</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav> -->
+    <main>
+      <section id="bigNav">
+        <div
+          class="container col-xxl-8 px-4 py-5 text-light text-center text-md-start"
+        >
+          <h1 class="display-1 my-5 pb-4 border-bottom">
+            Danny Schellenberger
+          </h1>
+          <h2 class="display-4 mb-5">Bootstrap Forms Examples</h2>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="index.html" class="h2 link-light linkHover pb-2">Home</a>
+            </div>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <span class="h2 activePage">Address Book</span>
+            </div>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="invoice.html" class="h2 link-light linkHover">Invoice</a>
+            </div>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="contact.html" class="h2 link-light linkHover"
+                >Contact Form</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-5">
+        <div
+          class="shadow-lg bg-light p-5 roundedCorners mb-5"
+          id="addressForm"
+        >
+          <div class="row">
+            <div class="col-12 col-md-5 mb-5">
+              <!-- Image -->
+              <div class="square-img-container">
+                <img
+                  src="/img/ProfilePicPt.png"
+                  class="square-img rounded-circle shadow"
+                  alt="Photo of Human"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <form>
+                <div class="row g-4">
+                  <!-- First Name -->
+                  <div class="col-12 col-md-6" id="firstName">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      class="form-control"
+                      placeholder="First Name"
+                      aria-label="First Name"
+                      required
+                    />
+                  </div>
+                  <!-- Last Name -->
+                  <div class="col-12 col-md-6" id="lastName">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input
+                      type="text"
+                      name="lastName"
+                      class="form-control"
+                      placeholder="Last Name"
+                      aria-label="Last Name"
+                      required
+                    />
+                  </div>
+                  <!-- Email -->
+                  <div class="col-12 col-md-6" id="email">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      aria-label="Email"
+                      required
+                    />
+                  </div>
+                  <!-- Phone -->
+                  <div class="col-12 col-md-6" id="phone">
+                    <label for="phoneNumber" class="form-label"
+                      >Phone Number (Optional)</label
+                    >
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      class="form-control"
+                      placeholder="Phone Number"
+                      aria-label="Phone Number"
+                    />
+                  </div>
+                  <!-- Address1 -->
+                  <div class="col-12" id="address1">
+                    <label for="address1" class="form-label">Address</label>
+                    <input
+                      type="text"
+                      name="address1"
+                      class="form-control"
+                      placeholder="1234 Main Street"
+                      aria-label="Address 1"
+                      required
+                    />
+                  </div>
+                  <!-- Address2 -->
+                  <div class="col-12" id="address2">
+                    <label for="address2" class="form-label"
+                      >Address 2 (optional)</label
+                    >
+                    <input
+                      type="text"
+                      name="address2"
+                      class="form-control"
+                      placeholder="Apartment #, Suite #"
+                      aria-label="Address 2"
+                    />
+                  </div>
+                  <!-- City -->
+                  <div class="col-12 col-md-6" id="city">
+                    <label for="city" class="form-label">City</label>
+                    <input
+                      type="text"
+                      name="city"
+                      class="form-control"
+                      placeholder="City"
+                      aria-label="City"
+                      required
+                    />
+                  </div>
+                  <!-- State -->
+                  <div class="col-12 col-md-4" id="State">
+                    <label for="state" class="form-label">State</label>
+                    <!-- State Options -->
+                    <select name="state" class="form-select" aria-label="State">
+                      <option selected>Select State</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District Of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                  <!-- Zip -->
+                  <div class="col-12 col-md-2" id="zip">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input
+                      type="text"
+                      name="zip"
+                      class="form-control"
+                      placeholder="12345"
+                      aria-label="zip"
+                      required
+                    />
+                  </div>
+
+                  <!-- Family Checkbox -->
+                  <div class="form-check" id="familyCheckBox">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Family
+                    </label>
+                  </div>
+
+                  <!-- Buttons MUST exist within the form tags -->
+                  <div class="col-12 text-end" id="saveButton">
+                    <button type="submit" class="btn bgIbiza text-white">
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Bootstrap JS -->
     <script

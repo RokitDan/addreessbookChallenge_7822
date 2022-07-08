@@ -20,96 +20,162 @@
   </head>
 
   <body class="bgIbiza">
-    <div class="container mt-5">
-      <h1 class="mb-3 text-start fw-bold text-uppercase text-white">
-        Contact Me
-      </h1>
-      <div class="border border-1 border-info shadow-lg bg-light p-2 rounded">
-        <form>
-          <div class="row g-4">
-            <!-- First Name -->
-            <div class="col-12 col-md-6">
-              <label for="firstName" class="form-label">First Name</label>
-              <input
-                type="text"
-                name="firstName"
-                class="form-control"
-                placeholder="First Name"
-                aria-label="First Name"
-                required
-              />
-            </div>
-            <!-- Last Name -->
-            <div class="col-12 col-md-6">
-              <label for="lastName" class="form-label">Last Name</label>
-              <input
-                type="text"
-                name="lastName"
-                class="form-control"
-                placeholder="Last Name"
-                aria-label="Last Name"
-                required
-              />
-            </div>
-            <!-- Email -->
-            <div class="col-12 col-md-6">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                placeholder="Email"
-                aria-label="Email"
-                required
-              />
-            </div>
-            <!-- Phone -->
-            <div class="col-12 col-md-6">
-              <label for="phoneNumber" class="form-label"
-                >Phone Number (Optional)</label
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap Forms Examples</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="addressbook.html">Address book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="invoice.html"
+                >Invoice</a
               >
-              <input
-                type="text"
-                name="phoneNumber"
-                class="form-control"
-                placeholder="Phone Number"
-                aria-label="Phone Number"
-              />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"" href="contact.html">Contact Form</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <main>
+      <section id="bigNav">
+        <div
+          class="container col-xxl-8 px-4 py-5 text-light text-center text-md-start"
+        >
+          <h1 class="display-1 my-5 pb-4 border-bottom">
+            Danny Schellenberger
+          </h1>
+          <h2 class="display-4 mb-5">Bootstrap Forms Examples</h2>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="index.html" class="h2 link-light linkHover">Home</a>
             </div>
-            <!-- Subject -->
-            <div class="col-12">
-              <label for="subject" class="form-label">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                class="form-control"
-                placeholder="Subject"
-                aria-label="Subject"
-                required
-              />
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="addressbook.html" class="h2 link-light linkHover"
+                >Address Book</a
+              >
             </div>
-            <!-- Message -->
-            <div class="col-12">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                type="text"
-                name="message"
-                class="form-control"
-                placeholder="Enter a Message"
-                aria-label="Message"
-                required
-                rows="5"
-                maxlength="150"
-              ></textarea>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="invoice.html" class="h2 link-light linkHover">Invoice</a>
             </div>
-            <!-- Buttons MUST exist within the form tags -->
-            <div class="col-12 text-end">
-              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <span class="h2 activePage">Contact Form</span>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
+        </div>
+      </section>
+      <section>
+        <!-- contactForm -->
+        <div class="container my-5 mx-auto">
+          <div class="shadow-lg bg-light p-2 roundedCorners">
+            <form class="p-3">
+              <div class="row g-4">
+                <!-- First Name -->
+                <div class="col-12 col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    class="form-control"
+                    placeholder="First Name"
+                    aria-label="First Name"
+                    required
+                  />
+                </div>
+                <!-- Last Name -->
+                <div class="col-12 col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    class="form-control"
+                    placeholder="Last Name"
+                    aria-label="Last Name"
+                    required
+                  />
+                </div>
+                <!-- Email -->
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    aria-label="Email"
+                    required
+                  />
+                </div>
+                <!-- Phone -->
+                <div class="col-12 col-md-6">
+                  <label for="phoneNumber" class="form-label"
+                    >Phone Number (Optional)</label
+                  >
+                  <input
+                    type="text"
+                    name="phoneNumber"
+                    class="form-control"
+                    placeholder="Phone Number"
+                    aria-label="Phone Number"
+                  />
+                </div>
+                <!-- Subject -->
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    class="form-control"
+                    placeholder="Subject"
+                    aria-label="Subject"
+                    required
+                  />
+                </div>
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    type="text"
+                    name="message"
+                    class="form-control"
+                    placeholder="Enter a Message"
+                    aria-label="Message"
+                    required
+                    rows="5"
+                    maxlength="150"
+                  ></textarea>
+                </div>
+                <!-- Buttons MUST exist within the form tags -->
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn bgIbiza text-white mt-3">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Bootstrap JS -->
     <script

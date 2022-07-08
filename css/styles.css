@@ -1,21 +1,32 @@
+#hero {
+  min-height: 100vh;
+  background: #141e30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 body {
   /* font-size: 140%; */
 }
 
-
-
+a {
+  text-decoration: none;
+}
 
 .bgIbiza {
-  background: #ee0979; /* fallback for old browsers */
+  background: #c33764; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #1d2671,
+    #c33764
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    /* 270deg, */ to right,
-    #ff6a00,
-    #ee0979
+    to right,
+    #1d2671,
+    #c33764
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -39,4 +50,22 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: top;
+}
+
+.trackingPlus {
+  letter-spacing: 0.3rem;
+}
+
+.activePage {
+  color: #f1dd21;
+  font-weight: 500;
+  border-top: 2px solid #f1dd21;
+  border-bottom: 2px solid #f1dd21;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.linkHover:hover {
+  color: #f1dd21;
+  transition: 300ms;
 }

@@ -17,27 +17,13 @@
       crossorigin="anonymous"
     />
 
-    <!-- Convert this to an external style sheet -->
-    <style>
-      body {
-        color: white;
-      }
-      #hero {
-        min-height: 100vh;
-        background: #141e30;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243b55, #141e30);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243b55, #141e30);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }
-    </style>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+  <body class="bgIbiza">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">App Name</a>
+        <a class="navbar-brand" href="#">Bootstrap Forms Examples</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,51 +41,53 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="addressbook.html">Address book</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Demo</a>
+              <a class="nav-link" href="invoice.html">Invoice</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact Form</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <!-- ======= Hero Section ======= -->
-    <main id="hero">
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="https://www.dropbox.com/s/25lk5ur2qvxms7o/AppLandingPage.png?raw=1"
-              class="d-block mx-lg-auto img-fluid"
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
-              Ship great software with our bug tracker
-            </h1>
-            <p class="lead">
-              A simple, fast and scalable bug tracking system that helps you
-              manage bugs easily and deliver great products on time.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-warning btn-lg px-4 me-md-2">
-                Demo
-              </button>
-              <button type="button" class="btn btn-outline-warning btn-lg px-4">
-                About
-              </button>
+    <main>
+      <section id="bigNav">
+        <div
+          class="container col-xxl-8 px-4 py-5 text-light text-center text-md-start"
+        >
+          <h1 class="display-1 my-5 pb-4 border-bottom">
+            Danny Schellenberger
+          </h1>
+          <h2 class="display-4 mb-5">Bootstrap Forms Examples</h2>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <span class="h2 activePage">Home</span>
+            </div>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="addressbook.html" class="h2 link-light linkHover"
+                >Address Book</a
+              >
+            </div>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="invoice.html" class="h2 link-light linkHover">Invoice</a>
+            </div>
+            <div class="col-12 col-md-3 my-3 my-md-1">
+              <a href="contact.html" class="h2 link-light linkHover"
+                >Contact Form</a
+              >
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="container p-5" id="dannyLogo">
+        <img src="/img/DannyLogo2022.svg" alt="Danny Schellenberger Logo" />
+      </section>
     </main>
     <!-- Bootstrap JS -->
     <script
